@@ -11,3 +11,33 @@ def save(client):
     id = results[0]['id']
     client.id = id
     return client
+
+
+def select_all():
+    clients = []
+
+    sql = "SELECT * FROM clients"
+    results = run_sql(sql)
+
+    for row in results:
+        trainer = trainer_repository.select(row['trainer_id'])
+        client = Client(row['first_name'], row['last_name'], row['age'], trainer, row['id'])
+        clients.append(client)
+    return clients
+
+
+# def select(id):
+#     client = None
+#     sql = "SELECT * FROM clients WHERE id = %s"
+#     values = [id]
+#     result = run_sql(sql, values)[0]
+
+#     if result is not None:
+#         trainer = trainer_repository.select(result['trainer_id'])
+#         client = client = Client(result['first_name'], result['last_name'], result['age'], trainer, result['id'])
+#     return client
+
+
+def delete_all():
+    sql = "DELETE  FROM clients"
+    run_sql(sql)
