@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 from flask import Blueprint
 from models.client import Client
 import repositories.client_repository as client_repository
@@ -20,10 +20,10 @@ def new_client():
 
 @clients_blueprint.route("/clients",  methods=['POST'])
 def create_client():
-    
-    
-
-
-
-
+    first_name = request.form['first_name']
+    second_name = request.form['last_name']
+    age = request.form['age']
+    trainer = trainer_repository.select(request.form['trainer_id'])
+    client = Client(first_name, last_name, age, trainer)
+    client_repository.save(client)
     return redirect('/clients')
