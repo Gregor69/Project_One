@@ -38,20 +38,20 @@ def delete_all():
     run_sql(sql)
 
 
-# def delete(id):
-#     sql = "DELETE  FROM trainers WHERE id = %s"
-#     values = [id]
-#     run_sql(sql, values)
+def delete(id):
+    sql = "DELETE  FROM trainers WHERE id = %s"
+    values = [id]
+    run_sql(sql, values)
 
-# def clients(trainer):
-#     clients = []
+def clients(trainer):
+    clients = []
 
-#     sql = "SELECT * FROM clients WHERE trainer_id = %s"
-#     values = [trainer.id]
-#     results = run_sql(sql, values)
+    sql = "SELECT * FROM clients WHERE trainer_id = %s"
+    values = [trainer.id]
+    results = run_sql(sql, values)
 
-#     for row in results:
-#         client = Client(row['first_name'], row['last_name'], row['age'], trainer, row['id'])
-#         clients.append(client)
-#     return clients
+    for row in results:
+        client = Client(row['first_name'], row['last_name'], row['age'], trainer, row['id'])
+        clients.append(client)
+    return clients
 
