@@ -1,4 +1,25 @@
 {% extends "base.html" %}
 {% block home %}
 
+{% for client in all_clients %}
+  <div class="client">
+      <div class="content">
+          <a href="/clients/{{client.id}}">{{client.first_name}} {{client.last_name}} {{client.age}} {{client.trainer.full_name}}</a>
+          <!-- <p><i>{{client.trainer.full_name}}</i></p> -->
+        </div>
+        <div class="buttons">
+            <form class="delete_form" action="/clients/{{client.id}}/delete" method="POST">
+                <button type="delete-button">Delete Client</button>
+            </form>
+
+        </div>
+
+
+
+
+  </div>
+{% endfor %}
+
+
+
 {% endblock %}
