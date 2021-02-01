@@ -22,8 +22,8 @@
         <select id="trainer" name="trainer_id">
             {% for trainer in all_trainers %}
              <option value="{{ trainer.id }}"
-             {% if client.trainer.id == trainer.id %} selected="selected"{% endif%}>
-             {{trainer.full_name}}</option>
+             {% if client.trainer.id == trainer.id %} selected="selected"{% endif %}>
+             {{trainer.full_name()}}</option>
             {% endfor %}
         </select>
     </div>

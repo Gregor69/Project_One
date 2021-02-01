@@ -4,5 +4,5 @@ class Trainer:
         self.last_name = last_name
         self.id = id
 
-def full_name(self):
+    def full_name(self):
         return f"{self.first_name} {self.last_name}"

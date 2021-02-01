@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block home %}
+
+{% for trainer in all_trainers %}
+  <div class="trainer">
+      <div class="content">
+          <a href="/trainers/{{trainer.id}}">{{trainer.first_name}} {{trainer.last_name}}</a>
+                   
+        </div>
+        <div class="buttons">
+            <form class="delete_form" action="/trainers/{{trainer.id}}/delete" method="POST">
+                <button type="delete-button">Delete Trainer</button>
+            </form>
+
+        </div>
+
+
+
+
+  </div>
+{% endfor %}
+
+
+
+{% endblock %}

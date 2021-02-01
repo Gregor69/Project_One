@@ -55,3 +55,8 @@ def clients(trainer):
         clients.append(client)
     return clients
 
+def update(trainer):
+    sql = "UPDATE trainer (first_name, last_name VALUES (%s, %s) RETURNING *"
+    values = [trainer.first_name, trainer.last_name]
+    print(values)
+    run_sql(sql, values)
