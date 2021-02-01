@@ -6,5 +6,5 @@ class Client:
         self.trainer = trainer
         self.id = id
 
-def full_name(self):
+    def full_name(self):
         return f"{self.first_name} {self.last_name}"

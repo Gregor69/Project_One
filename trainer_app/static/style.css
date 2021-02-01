@@ -1,6 +1,171 @@
+@import url(//https://fonts.googleapis.com/css?family=Nunito+Sans);
+
 body {
-    font-family: "Helvetica", arial, sans-serif
+    font-family: "Nunito+Sans", arial, sans-serif
     
+}
+
+.client {
+  border: 2px solid #ccc;
+  width: 200px;
+  min-height: 70px;
+  padding: 10px;
+  display:flex;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font: Nunito+sans;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+}
+
+.buttons{
+  margin-top: 15px;
+  margin-left: 3px;
+  font-size: 2em
+  colour: orange
+}
+
+.buttons i {
+  width: 90px;
+}
+
+input, select, button {
+  font-size: 100%;
+  width: 100%;
+  padding: 15 px;
+  margin: 15px;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.newclient {
+  border: 2px solid #ccc;
+  width: 200px;
+  min-height: 70px;
+  padding: 10px;
+  display:flex;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+}
+
+.buttons{
+  margin-top: 15px;
+  margin-left: 3px;
+  font-size: 2em
+  colour: orange
+}
+
+.buttons i {
+  width: 90px;
+}
+
+input, select, button {
+  font-size: 100%;
+  width: 100%;
+  padding: 15 px;
+  margin: 15px;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.trainer {
+  border: 2px solid #ccc;
+  width: 200px;
+  min-height: 70px;
+  padding: 10px;
+  display:flex;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+}
+
+.buttons{
+  margin-top: 15px;
+  margin-left: 3px;
+  font-size: 2em
+  colour: orange
+}
+
+.buttons i {
+  width: 90px;
+}
+
+input, select, button {
+  font-size: 100%;
+  width: 100%;
+  padding: 15 px;
+  margin: 15px;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.newtrainer {
+  border: 2px solid #ccc;
+  width: 200px;
+  min-height: 70px;
+  padding: 10px;
+  display:flex;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+}
+
+.buttons{
+  margin-top: 15px;
+  margin-left: 3px;
+  font-size: 2em
+  colour: orange
+}
+
+.buttons i {
+  width: 90px;
+}
+
+input, select, button {
+  font-size: 100%;
+  width: 100%;
+  padding: 15 px;
+  margin: 15px;
+  box-sizing: border-box;
 }
 
 .navLink {
@@ -11,7 +176,7 @@ body {
     display: flex;
     padding: 15px;
     background-color: grey;
-    color: white;
+    color: orange;
 }
 
  
@@ -20,13 +185,13 @@ body {
   }
   
 .menu li a:visited{
-    color: white;
+    color: orange;
   }
   
 .menu li{
     padding-right: 10px;
     list-style: none;
-    color: white;
+    color: orange;
     font-family: "Helvetica", arial, sans-serif; font-size: 14px;
   }
   
@@ -36,3 +201,12 @@ body {
     width: 300px;
     margin: 0 auto;
   }
+
+#home-image {
+    width:100vw;
+    height:100vh;
+    background-image: url('/images/gym.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  

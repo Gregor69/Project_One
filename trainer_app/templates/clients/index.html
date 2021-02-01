@@ -1,10 +1,17 @@
 {% extends "base.html" %}
 {% block home %}
 
+<section id="home-image">
+
 {% for client in all_clients %}
   <div class="client">
       <div class="content">
-          <a href="/clients/{{client.id}}">{{client.first_name}} {{client.last_name}} {{client.age}} {{client.trainer.full_name()}}</a>
+          <label for="name">Name:</label>
+          <a href="/clients/{{client.id}}">{{client.full_name()}}</a>
+          <!-- <label for="first_name">Last Name:</label>
+          <a href="/clients/{{client.id}}">{{client.last_name}}</a> -->
+          <label for="first_name">Age:</label>
+          <a href="/clients/{{client.id}}">{{client.age}}</a>
           <p><i>{{client.trainer.full_name()}}</i></p>
         </div>
         <div class="buttons">
@@ -12,14 +19,10 @@
                 <button type="delete-button">Delete Client</button>
             </form>
 
-        </div>
-
-
-
+      </div>
 
   </div>
+
 {% endfor %}
-
-
-
+</section>
 {% endblock %}
