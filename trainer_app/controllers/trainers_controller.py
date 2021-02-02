@@ -21,7 +21,7 @@ def new_trainer():
 def create_trainer():
     first_name = request.form['first_name']
     last_name = request.form['last_name']
-    client = client_repository.select(request.form['client_id'])
+    
     trainer = Trainer(first_name, last_name)
     trainer_repository.save(trainer)
     return redirect('/trainers')

@@ -12,10 +12,11 @@
           <a href="/clients/{{client.id}}">{{client.last_name}}</a> -->
           <label for="first_name">Age:</label>
           <a href="/clients/{{client.id}}">{{client.age}}</a>
+          <label for="trainer">Trainer:</label>
           <p><i>{{client.trainer.full_name()}}</i></p>
         </div>
-        <div class="buttons">
-            <form class="delete_form" action="/clients/{{client.id}}/delete" method="POST">
+          <div>
+            <form class="delete-form" action="/clients/{{client.id}}/delete" method="POST">
                 <button type="delete-button">Delete Client</button>
             </form>
 
