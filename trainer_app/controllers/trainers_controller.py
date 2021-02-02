@@ -21,7 +21,6 @@ def new_trainer():
 def create_trainer():
     first_name = request.form['first_name']
     last_name = request.form['last_name']
-    
     trainer = Trainer(first_name, last_name)
     trainer_repository.save(trainer)
     return redirect('/trainers')
@@ -34,8 +33,7 @@ def show_trainer(id):
 @trainers_blueprint.route("/trainers/<id>/edit", methods=['GET'])
 def edit_trainer(id):
     trainer= trainer_repository.select(id)
-    clients = client_repository.select_all()
-    return render_template('/trainers/edit.html', trainer = trainer, all_clients = clients)
+    return render_template('/trainers/edit.html', trainer = trainer)
 
 @trainers_blueprint.route("/trainers/<id>",  methods=['POST'])
 def update_trainer(id):

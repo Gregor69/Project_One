@@ -12,14 +12,14 @@
         <input type="text" id="last_name" name="last_name" placeholder="last_name" required autofocus> 
     </div>
     <div>
-        <label for="client">Client:</label>
+        <!-- <label for="client">Client:</label>
         <select id="client" name="client_id">
             {% for client in all_clients %}
              <option value="{{ client.id }}"
              {% if trainer.id == client.id %} selected="selected"{% endif%}>
-             {{client.full_name}}</option>
+             {{client.full_name ()}}</option>
             {% endfor %}
-        </select>
+        </select> -->
     </div>
 
     <button type="submit">Edit Trainer</button>
