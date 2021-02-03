@@ -27,7 +27,7 @@ client_repository.save(client3)
 
 
 
-
+dropdb trainer_manager
 
 
 

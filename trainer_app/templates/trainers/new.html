@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 
-<form action="/trainers" method="post">
-     
 
+<body class="body">
+<form action="/trainers" method="post">
     <div class="new-trainer">
         <label for="first_name">First Name:</label>
         <input type="text" id="first_name" name="first_name" placeholder="first_name" required autofocus> 
@@ -11,8 +11,7 @@
         <input type="text" id="last_name" name="last_name" placeholder="last_name" required autofocus>
         
          
-        <button type="submit">Add Trainer</button>
-    
+        <button type="submit">Add Trainer</button>   
     </div>
 
    
@@ -20,6 +19,6 @@
     
 
 </form>
-</section>
+</body>
 
 {% endblock %}

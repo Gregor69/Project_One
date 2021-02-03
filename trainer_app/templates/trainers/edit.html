@@ -1,28 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 
-
+<body class="body">
 <form action="/trainers/{{trainer.id}}" method="post">
-   
-
     <div>
         <label for="first_name">First Name:</label>
         <input type="text" id="first_name" name="first_name" placeholder="first_name" required autofocus> 
         <label for="last_name">Last Name:</label>
         <input type="text" id="last_name" name="last_name" placeholder="last_name" required autofocus> 
     </div>
-    <div>
-        <!-- <label for="client">Client:</label>
-        <select id="client" name="client_id">
-            {% for client in all_clients %}
-             <option value="{{ client.id }}"
-             {% if trainer.id == client.id %} selected="selected"{% endif%}>
-             {{client.full_name ()}}</option>
-            {% endfor %}
-        </select> -->
-    </div>
-
     <button type="submit">Edit Trainer</button>
 </form>
-
+</body>
 {% endblock %}

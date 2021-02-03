@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 
-<form action="/clients" method="post">
-   
 
+<body class="body">
+<form action="/clients" method="post">
     <div class="new-client"> 
         <label for="first_name">First Name:</label>
         <input type="text" id="first_name" name="first_name" placeholder="first_name" required autofocus> 
@@ -11,7 +11,7 @@
         <label for="last_name">Last Name:</label>
         <input type="text" id="last_name" name="last_name" placeholder="last_name" required autofocus> 
     
-        <label for="age">age:</label>
+        <label for="age">Age:</label>
         <input type="int" id="age" name="age" placeholder="age" required autofocus> 
     
         <label for="trainer">Trainer:</label>
@@ -23,6 +23,6 @@
     <button type="submit">Add Client</button>
     </div>
 </form>
-
+</body>
 {% endblock %}
 
