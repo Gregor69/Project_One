@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">  
     <title>Document</title>
 </head>
-<body>
+
     <header>
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">  
-    <title>Document</title>
+        <div class="nav-bar">
+    
         <nav>
-        <ul class="menu">
+        <ul>
             <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a href="{{ url_for('clients.clients') }}">Clients</a></li>
             <li><a href="{{ url_for('clients.new_client') }}">New Client</a></li>
@@ -20,11 +20,11 @@
         </ul>
         </nav>
     </header>
-    <div class="container">
+    
         {% block content %}
         {% endblock %}
     </div>
     {% block home %}
     {% endblock %}    
-</body>
+
 </html>

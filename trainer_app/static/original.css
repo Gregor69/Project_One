@@ -1,0 +1,260 @@
+@import url(//https://fonts.googleapis.com/css?family=Nunito+Sans);
+
+body {
+    font-family: "Nunito Sans", arial, sans-serif;
+    background-color: grey
+    
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+}
+.client {
+  border: 2px solid #ccc;
+  width: 300px;
+  min-height: 50px;
+  padding: 10px;
+  display: flex;
+  line-height: 20px;
+  margin-bottom: 10px;
+  background-color: grey
+}
+
+.content {
+  font: "Nunito sans";
+  font-weight: normal;
+  text-decoration-color: black;
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+}
+
+.delete-form {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 0.5em;
+  color: orange;
+}
+
+.buttons{
+  margin-top: 15px;
+  margin-left: 3px;
+  font-size: 0.5em;
+  color: orange
+} 
+
+.buttons i {
+  width: 10px;
+}
+
+input, select, button {
+  font-size: 10%;
+  width: 10%;
+  box-sizing: border-box;
+} 
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.body {
+  background-color: grey
+}
+
+.new-client {
+  border: 2px solid #ccc;
+  width: 300px;
+  min-height: 40px;
+  padding: 10px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  background-color: grey;
+}
+
+.content {
+  font: "Nunito sans";
+  font-weight: normal;
+  text-decoration-color: black;
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+}
+
+.buttons{
+  margin-top: 15px;
+  margin-left: 3px;
+  font-size: 2em;
+  color:orange  
+}
+
+.buttons i {
+  width: 200px;
+} 
+
+input, button {
+  font-size: 100%;
+  width: 100%;
+  padding: 15 px;
+  margin: 15px;
+  box-sizing: border-box;
+} 
+
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: auto;
+}
+
+.trainer {
+  border: 2px solid #ccc;
+  width: 200px;
+  min-height: 70px;
+  padding: 10px;
+  display:flex;
+  line-height: 20px;
+  margin-bottom: 10px;
+  background-color: grey;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+}
+
+.buttons{
+  margin-top: 15px;
+  margin-left: 3px;
+  font-size: 2em;
+  color: orange
+}
+
+.buttons i {
+  width: 90px;
+}
+
+input, select, button {
+  font-size: 100%;
+  width: 100%;
+  padding: 15 px;
+  margin: 15px;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: grey
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.new-trainer {
+  border: 2px solid #ccc;
+  width: 300px;
+  min-height: 40px;
+  padding: 10px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  background-color: grey;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+}
+
+.button {
+    margin-top: 15px;
+    margin-left: 3px;
+    font-size: 2em;
+    color:orange  
+  }
+  
+.buttons i {
+    width: 200px;
+  } 
+  
+.input, button {
+    font-size: 100%;
+    width: 100%;
+    padding: 15 px;
+    margin: 15px;
+    box-sizing: border-box;
+  } 
+
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.navLink {
+    margin: 50px;
+}
+
+.menu {
+    display: flex;
+    padding: 15px;
+    background-color: grey;
+    color: orange;
+    text-align: center;
+}
+
+ 
+.menu li a{
+    text-decoration: none;
+}
+  
+.menu li a:visited{
+    color: orange;
+}
+  
+.menu li{
+    padding-right: 10px;
+    list-style: none;
+    color: orange;
+    font-family: "Nunito Sans", arial, sans-serif; 
+    font-size: 14px;
+}
+  
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+#home-image {
+    width:100vw;
+    height:100vh;
+    background-image: url('/static/images/gym.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+

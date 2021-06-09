@@ -13,6 +13,8 @@ def save(client):
     return client
 
 
+
+
 def select_all():
     clients = []
 
@@ -24,7 +26,6 @@ def select_all():
         client = Client(row['first_name'], row['last_name'], row['age'], trainer, row['id'])
         clients.append(client)
     return clients
-
 
 def select(id):
     client = None
@@ -38,9 +39,23 @@ def select(id):
     return client
 
 
+
+
+# Function to delete all the clients listed in database
+# define delete all
+# then delete all from the client table in sql file
+# then run the sql file in database
+
+
 def delete_all():
     sql = "DELETE  FROM clients"
     run_sql(sql)
+
+
+
+
+
+
 
 def delete(id):
     sql = "DELETE  FROM clients WHERE id = %s"
